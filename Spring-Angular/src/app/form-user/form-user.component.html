@@ -1,0 +1,32 @@
+<hr>
+<div class="container">
+    <div class="row">
+        <div class="col">
+    <form [formGroup]="userForm" (ngSubmit)="onSubmitForm()" class="form-group">
+        <label>
+            Nom :
+            <input type="text" formControlName="lastname" class="form-control" />
+        </label>
+        <br>
+        <label>
+            Prénom :
+            <input type="text" formControlName="firstname"class="form-control" />
+        </label>
+        <br>
+        <label>
+            Email : 
+            <input type="email" formControlName="email"class="form-control" />
+        </label>
+        <br>
+        <label>
+            Mot de passe : 
+            <input type="password" reu formControlName="password"class="form-control" />
+        </label>
+        <br>
+        <button type="submit"  [disabled]="!userForm.valid" class="btn btn-primary" >Enregister</button>
+    </form>
+    </div>
+ </div> 
+</div>
+<hr>
+

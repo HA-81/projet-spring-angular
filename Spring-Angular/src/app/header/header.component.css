@@ -1,0 +1,22 @@
+ul>li{
+    padding:5px;
+    
+}
+.navbar{
+    justify-content: space-between;
+}
+ul{
+    justify-content: center;
+}
+li>a{
+    color:rgb(51, 50, 50)
+}
+li>a:hover{
+    color:rgb(30, 143, 143);
+    font-style:italic;
+    font-size:1.2rem;
+}
+
+#logo{
+    width: 60px
+}

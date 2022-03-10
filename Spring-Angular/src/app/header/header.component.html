@@ -1,0 +1,16 @@
+<nav class="navbar navbar-expand-sm bg- navbar-primary nav justify-content-center">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"> <img src="https://img2.freepng.fr/20180303/teq/kisspng-logo-book-wallpaper-book-writing-5a9adacfd9e036.1216055515200979998924.jpg" id="logo" alt="" srcset=""> </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav justify-content-center">
+      <li class="nav-item" routerLinkActive="active"><a routerLink="Acceuil">Accueil</a></li>
+            <li class="nav-item" routerLinkActive="active"><a  [routerLink]="['/inscription']">Inscription</a></li>
+            <li class="nav-item" routerLinkActive="active"><a routerLink="auth">Authentification</a></li>
+            <li class="nav-item" routerLinkActive="active"><a  [routerLink]="['/users-list']">Utilisateurs</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>

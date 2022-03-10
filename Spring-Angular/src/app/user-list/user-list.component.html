@@ -1,0 +1,30 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col"><h2>Liste utilisateur</h2>
+            <table *ngIf="users!== null" class="table table-striped">
+                <thead>
+                    <tr>
+                    <th scope="col">Nom</th>
+                    <th scope="col">Prénom</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Password</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let user of users">
+                        <td>{{ user.lastname }}</td>
+                        <td>{{ user.firstname }}</td>
+                        <td>{{ user.email }}</td>
+                        <td>{{ user.password }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </div>
+    </div>
+
+
+
+
+
