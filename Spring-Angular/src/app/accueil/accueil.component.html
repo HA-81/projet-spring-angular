@@ -1,0 +1,12 @@
+<div class="container-fluid">
+    <div class="row" *ngIf="active" style="background-color:aquamarine; border: 1px solid;">
+        <div class="col-md-3">
+            <h3>Welcome {{ firstname }} </h3>
+        </div>
+    </div>
+    <br>
+    <div>
+        <button type="button" class="btn btn-sm btn-primary" (click)="goToUser()">Connecter-vous</button>
+    </div>
+    
+</div>

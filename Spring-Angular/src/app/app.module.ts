@@ -15,6 +15,7 @@ import { HeaderComponent } from './header/header.component';
 
 import { UserListComponent } from './user-list/user-list.component';
 import { UserCardComponent } from './user-card/user-card.component';
+import { AccueilComponent } from './accueil/accueil.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { UserCardComponent } from './user-card/user-card.component';
     AuthComponent,
     HeaderComponent,
     UserListComponent,
-    UserCardComponent
+    UserCardComponent,
+    AccueilComponent
 
   ],
   imports: [

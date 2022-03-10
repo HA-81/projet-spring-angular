@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpResponse, HttpHeaders } from '@angular/common/http';
-import { map, Observable, Subject } from 'rxjs';
+import { map, Observable, Subject, switchMap } from 'rxjs';
 import { User } from '../interfaces/user.interface';
 
 @Injectable({
@@ -28,13 +28,17 @@ export class UserService {
 
   }
 
-  // *emitUserSubject() {
+  // emitUserSubject() {
   //   this.usersSubject.next(this.usersSubject.slice());
   // }
 
-  getUserById(id: number) {
+  getLastNameById(id: number) {
     const user = this.getUsers().pipe(
-      map((data:any)=> data.id)).subscribe()
+      switchMap((data:any)=> data.lastname)).subscribe()
+  }
+  getFirstNameById(id: number) {
+    const user = this.getUsers().pipe(
+      switchMap((data:any)=> data.firstname)).subscribe()
   }
 
 //   addUser(user: User) {
